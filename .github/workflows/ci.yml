@@ -1,4 +1,4 @@
-name: CI
+name: Ruby CI
 on:
   push:
     branches:
@@ -7,12 +7,12 @@ on:
       - "*.*.*"
   pull_request:
   schedule:
-  - cron:  '30 20 * * *'
-
+  - cron:  '30 20/_
+/
 jobs:
   build-installer:
     strategy:
-      fail-fast: false
+      fail-fast:/false
       matrix:
         include:
         - target_ruby: "3.4.4"
